@@ -1,0 +1,83 @@
+.shop-form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    
+    max-width: 480px;
+    margin: 20px auto;
+    padding: 16px;
+
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    box-sizing: border-box;
+}
+
+.add-btn {
+    grid-column: span 2;
+    padding: 10px;
+    background: #333;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: 0.2s;
+}
+
+.input {
+    padding: 10px 12px;
+    margin: 0;
+
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    font-size: 14px;
+    
+    transition: border 0.2s, box-shadow 0.2s;
+}
+
+.input:focus {
+    outline: none;
+    border: 1px solid var(--primary);
+    box-shadow: 0 0 0 2px rgba(228, 132, 84, 0.2);
+}
+
+.add-btn {
+    margin-top: 8px;
+    padding: 12px;
+
+    background: #333;
+    color: white;
+    border: none;
+    border-radius: 10px;
+
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+
+    transition: all 0.2s;
+}
+
+/* ホバー */
+.add-btn:hover {
+    background: #222;
+}
+
+/* 押した感 */
+.add-btn:active {
+    transform: translateY(0);
+}
+
+.input::placeholder {
+    color: #999;
+}
+
+.app.dark .shop-form {
+    background: #2a2a2a;
+}
+
+.app.dark .input {
+    background: #333;
+    color: #fff;
+    border: 1px solid #555;
+}

@@ -1,0 +1,46 @@
+.shop-list{
+display: grid;
+grid-template-columns: repeat(auto-fill, minmax(280px,1fr));
+gap: 20px;
+margin-top: 20px;
+}
+
+@media (max-width: 600px) {
+    .shop-list{
+        grid-template-columns: 1fr;
+    }
+}
+
+.empty-state {
+    text-align: center;
+    padding: 60px 20px;
+    margin-top: 24px;
+    opacity: 0.9;
+    border-radius: 16px;
+    background: var(--card-bg);
+    border: 1px solid var(--border);
+}
+
+/* タイトル */
+.empty-title {
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 0.02em;
+    margin-bottom: 8px;
+}
+
+/* サブ */
+.empty-sub {
+    font-size: 13px;
+    color: var(--text-sub);
+}
+
+.app.dark .empty-state {
+  border-color: #333;
+}
+
+@media (max-width: 768px) {
+  .shop-list {
+    grid-template-columns: 1fr;
+  }
+}
